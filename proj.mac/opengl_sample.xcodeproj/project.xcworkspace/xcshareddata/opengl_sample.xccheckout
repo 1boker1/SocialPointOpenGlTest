@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7660E13E-0F7C-42AC-81BE-69A2AA04454A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>opengl_sample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>53AB1B8B-9D31-48E2-9B8E-C3BF65C3C2A2</key>
+		<string>https://github.com/socialpoint/sp-mobile-templates.git</string>
+		<key>86C76AD3-B434-4D39-A332-A7605D01A465</key>
+		<string>ssh://github.com/glfw/glfw.git</string>
+		<key>E4067B1A-DCDB-426E-99D5-B0D87976641B</key>
+		<string>https://github.com/marioquesada/SOIL.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OpenglSample/opengl_sample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>53AB1B8B-9D31-48E2-9B8E-C3BF65C3C2A2</key>
+		<string>../../..</string>
+		<key>86C76AD3-B434-4D39-A332-A7605D01A465</key>
+		<string>../../lib/glfw</string>
+		<key>E4067B1A-DCDB-426E-99D5-B0D87976641B</key>
+		<string>../../lib/soil</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/socialpoint/sp-mobile-templates.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>53AB1B8B-9D31-48E2-9B8E-C3BF65C3C2A2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>86C76AD3-B434-4D39-A332-A7605D01A465</string>
+			<key>IDESourceControlWCCName</key>
+			<string>glfw</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E4067B1A-DCDB-426E-99D5-B0D87976641B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>soil</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>53AB1B8B-9D31-48E2-9B8E-C3BF65C3C2A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sp-mobile-templates</string>
+		</dict>
+	</array>
+</dict>
+</plist>
