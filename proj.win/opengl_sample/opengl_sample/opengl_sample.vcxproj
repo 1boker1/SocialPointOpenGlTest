@@ -105,6 +105,7 @@
     <ClCompile Include="..\..\..\src\Time.cpp" />
     <ClCompile Include="..\..\..\src\WindowInfo.cpp" />
     <ClCompile Include="..\..\..\src\World.cpp" />
+    <ClCompile Include="Ship.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GML\GML.vcxproj">
@@ -136,6 +137,7 @@
     <ClInclude Include="..\..\..\src\Time.hpp" />
     <ClInclude Include="..\..\..\src\WindowInfo.hpp" />
     <ClInclude Include="..\..\..\src\World.hpp" />
+    <ClInclude Include="Ship.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

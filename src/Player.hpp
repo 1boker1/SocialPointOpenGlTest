@@ -7,6 +7,7 @@
 
 class IslandsMap;
 class Camera;
+class GameScene;
 
 class Player : public GameEntity, public IslandTouchDelegate
 {
@@ -15,6 +16,7 @@ class Player : public GameEntity, public IslandTouchDelegate
     VIslands _islandsSelected;
 	IslandsMap* _islandMap;
     Camera* _camera;
+	GameScene* _Scene;
     
 public:
 	Player();
@@ -22,8 +24,12 @@ public:
     
 	void setIslandMap(IslandsMap& islandMap);
     void setCamera(Camera& camera);
+	void setGameScene(GameScene& _GameScene);
+
 private:
 	void onIslandTouched(Island& island);
+	void onIslandTargeted(Island& island);
+	void sendShips(Island& island);
 	void clearSelectedIslands();
     void addSelectedIsland(Island& island);
 };

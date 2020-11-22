@@ -34,8 +34,8 @@ class Island : public GameEntity
 	bool _isSelected;
 	int _maxUnits;
 	int _units;
-	float _lastTimeUnitsIncremented;
 	float _unitsIncrementStep;
+	float _IncrementTimer;
     
 public:
     Island();
@@ -53,7 +53,14 @@ public:
 	void setIsSelected(bool isSelected);
     
 	void setGameController(GameController& gameController);
+
+	void produceShips();
     
+	int getAmountOfShips();
+	void setAmountOfShips(int amount);
+
+	float getRadius();
+
 private:
 	void updateView();
 	void updateText();

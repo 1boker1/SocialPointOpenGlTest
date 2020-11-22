@@ -19,3 +19,6 @@ const std::string ResourcesPaths::kLoseImg="sp_logo";
 const std::string ResourcesPaths::kTextAtlas="font";
 
 const std::string ResourcesPaths::kBackgroundImg="background1";
+
+const std::string ResourcesPaths::kShipImg = "nave";
+

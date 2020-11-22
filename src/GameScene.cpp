@@ -10,6 +10,7 @@
 #include "Plane.hpp"
 #include "ResourcesPaths.hpp"
 #include "WindowInfo.hpp"
+#include "../proj.win/opengl_sample/opengl_sample/Ship.hpp"
 
 GameScene::GameScene()
 :_world(NULL), _camera(NULL), _background(NULL)
@@ -30,11 +31,12 @@ void GameScene::load()
     // procedural creation of islands
 	IslandsMap* islandsMap = new IslandsMap();
 	addEntity(islandsMap);
-    
+
     // player logic
 	Player* player = new Player();
 	player->setIslandMap(*islandsMap);
     player->setCamera(*_camera);
+    player->setGameScene(*this);
 	addEntity(player);
     
     // background screen

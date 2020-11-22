@@ -25,6 +25,11 @@ public:
     static const std::string kTextAtlas;
     
     static const std::string kBackgroundImg;
+
+    static const std::string kShipImg;
+
+
+
 };
 
 #endif
