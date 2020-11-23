@@ -4,6 +4,7 @@
 
 class Plane;
 class Island;
+class GameController;
 
 class Ship : public GameEntity
 {

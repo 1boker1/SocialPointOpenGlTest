@@ -113,26 +113,9 @@ void Player::onIslandTargeted(Island& island)
 {
 	if (island.getOwnerTag() != getTag())
 	{
-		sendShips(island);
-	}
-}
-
-void Player::sendShips(Island& island)
-{
-	for (int i = 0; i < _islandsSelected.size(); i++)
-	{
-		int amountOfShips = _islandsSelected[i]->getAmountOfShips();
-
-		for (int x = 0; x < amountOfShips; x++)
+		for (int i = 0; i < _islandsSelected.size(); i++)
 		{
-			Ship* newShip = new Ship();
-
-			newShip->setPosition(_islandsSelected[i]->getPosition());
-			newShip->setTarget(island);
-
-			_Scene->addEntity(newShip);
+			_islandsSelected[i]->sendShips(island);
 		}
-
-		_islandsSelected[i]->setAmountOfShips(0);
 	}
 }

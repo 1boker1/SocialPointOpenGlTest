@@ -25,6 +25,10 @@ public:
     
 	void update();
 	void render(); 
+
+    bool isGameOver();
+
+    void endGame();
 };
 
 #endif /* defined(__opengl_sample__EndScene__) */

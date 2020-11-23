@@ -15,7 +15,7 @@ Tasks
 * The planets should change its owner when the number of attacking ships is superior --
 * The planets that belong to a player should increase its ship capacity when conquered and decrease it when attacked
 * Implement a game HUD to show the number of ships on each planet--
-* End the game when some player has conquered all the planets
+* End the game when some player has conquered all the planets--
 
 On top of that, if you want something more, you can also make any of these:
 * Implement an IA for the second player

@@ -29,7 +29,6 @@ public:
 private:
 	void onIslandTouched(Island& island);
 	void onIslandTargeted(Island& island);
-	void sendShips(Island& island);
 	void clearSelectedIslands();
     void addSelectedIsland(Island& island);
 };

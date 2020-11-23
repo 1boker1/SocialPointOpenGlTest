@@ -92,3 +92,12 @@ void StartScene::render()
 	glLoadMatrixf(&textLocalToWorld[0][0]);
     _text->render();
 }
+
+bool StartScene::isGameOver()
+{
+    return false;
+}
+
+void StartScene::endGame()
+{
+}

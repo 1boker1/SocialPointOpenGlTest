@@ -55,11 +55,14 @@ public:
 	void setGameController(GameController& gameController);
 
 	void produceShips();
-    
+	void sendShips(Island& island);
+
 	int getAmountOfShips();
 	void setAmountOfShips(int amount);
 
 	float getRadius();
+
+	void conquered(Tag owner);
 
 private:
 	void updateView();

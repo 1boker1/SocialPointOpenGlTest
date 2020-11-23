@@ -8,6 +8,9 @@
 #include "Time.hpp"
 #include "MathUtils.hpp"
 #include "ResourcesPaths.hpp"
+#include "../proj.win/opengl_sample/opengl_sample/Ship.hpp"
+#include "../proj.win/opengl_sample/opengl_sample/GameController.hpp"
+#include <random>
 
 Island::Island()
 	:GameEntity(Tag::ISLAND), _ownerTag(Tag::NEUTRAL), _gameController(NULL), _plane(NULL), _guiText(NULL)
@@ -84,7 +87,17 @@ int Island::getAmountOfShips()
 
 float Island::getRadius()
 {
-	return getScale().x *0.5f;
+	return getScale().x * 0.5f;
+}
+
+void Island::conquered(Tag owner)
+{
+	setOwnerByTag(owner);
+
+	if (_gameController->shouldGameEnd())
+	{
+		_gameController->endGame();
+	}
 }
 
 void Island::setAmountOfShips(int amount)
@@ -133,6 +146,24 @@ void Island::updateView()
 void Island::updateText()
 {
 	_guiText->setText(std::to_string(_units));
+}
+
+void Island::sendShips(Island& island)
+{
+	for (int x = 0; x < getAmountOfShips(); x++)
+	{
+		Ship* newShip = new Ship();
+
+		float xPosition = MathUtils::rand(-1.f, 1.f);
+		float yPosition = MathUtils::rand(-1.f, 1.f);
+
+		glm::vec3 position = getPosition() + glm::normalize(glm::vec3(xPosition, yPosition, 0)) * getRadius();
+
+		newShip->setPosition(position);
+		newShip->setTarget(island);
+	}
+
+	setAmountOfShips(0);
 }
 
 void Island::render()

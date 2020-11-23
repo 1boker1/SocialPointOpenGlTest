@@ -8,12 +8,14 @@
 class World;
 class Camera;
 class Plane;
+class IslandsMap;
 
 class GameScene : public IScene
 {
 	World* _world;
     Camera* _camera;
     Plane* _background;
+    IslandsMap* _islandMap;
     
 public:
 	GameScene();

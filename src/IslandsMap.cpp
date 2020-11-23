@@ -97,3 +97,16 @@ void IslandsMap::getIslandsByOwnerTag(Islands& out, Tag tag)
 		}
 	}
 }
+
+int IslandsMap::getNonPlayerIslands()
+{
+	int amount=0;
+	for (Island* island : _islands)
+	{
+		if (island->getOwnerTag() != Tag::PLAYER)
+		{
+			amount++;
+		}
+	}
+	return amount;
+}

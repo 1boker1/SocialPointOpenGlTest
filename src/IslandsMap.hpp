@@ -25,6 +25,9 @@ public:
 	Island* getTouchedIsland(const glm::vec3& point);
 	void setGameController(GameController& controller);
 	void getIslandsByOwnerTag(Islands& out, Tag tag);
+	
+	int getNonPlayerIslands();
+
 };
 
 #endif /* defined(__opengl_sample__IslandsMap__) */

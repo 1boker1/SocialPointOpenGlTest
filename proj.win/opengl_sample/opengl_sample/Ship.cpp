@@ -10,6 +10,8 @@
 Ship::Ship()
 	:GameEntity(Tag::PLAYER), _ownerTag(Tag::PLAYER), _plane(NULL), _Speed(15)
 {
+	ServiceLocator::get().getCurrentScene().addEntity(this);
+
 	setScale(glm::vec3(5.0f, 5.0f, 1.0f));
 }
 
@@ -55,7 +57,7 @@ void Ship::conquer()
 		}
 		else
 		{
-			_TargetIsland->setOwnerByTag(_ownerTag);
+			_TargetIsland->conquered(_ownerTag);
 		}
 	}
 	else
